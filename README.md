@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : BARRET
+- PRÉNOM : Noah
+- GROUPE : A1
+- URL du site : https://taupe-piroshki-0f125f.netlify.app/
+- URL FIGMA : https://www.figma.com/design/9NTkObjjXA0GaERvEqwCA6/SAE-103-BARRET-Noah-A1?node-id=1-3&t=gPpFlzDhuibzbSvm-1
 
 ## Sujet
 
