@@ -12,12 +12,13 @@ Soyez attentifs à l'ordre d'import :
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400..900&family=Playfair+Display:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400..900&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Vendors */
 @import "vendors/normalize.css";
 
 /* Utils */
-@import "utils/style.css";
+@import "utils/variable.css";
 
 /* Base */
 @import "base/main.css";
@@ -28,10 +29,4 @@ Soyez attentifs à l'ordre d'import :
 @import "layout/footer.css";
 
 /* Components */
-@import "components/menu.css";
-@import "components/hero.css";
-@import "components/section.css";
-@import "components/intro.css";
-@import "components/work.css";
-@import "components/stats.css";
-@import "components/button.css";
+@import "components/";
