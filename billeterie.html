@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sci-Fi Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon.png">
 </head>
 <body>
     <header class="header">
         <div class="header__accueil--icon">
             <img src="/assets/icons/Vector.svg" alt="page accueil" class="accueil-icon">
         </div>
-
         <div class="header__icons">
             <img src="/assets/icons/menu-open.svg" alt="Menu" class="menu-icon">
             <img src="/assets/icons/search.svg" alt="Recherche" class="search-icon">
-        </div>
+            <nav class="menu">
+                <button class="menu-toggle" aria-label="Ouvrir le menu">
+                    <img src="./assets/icons/close.svg" alt="Menu Fermer">
+                </button>
+                <ul class="menu-list">
+                    <li><a href="infos.html">Infos pratiques</a></li>
+                    <li><a href="billeterie.html">Billetterie</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">programmation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+                <button class="search-toggle" aria-label="Rechercher">
+                    <img src="./assets/icons/search.svg" alt="Rechercher">
+                </button>
+            </nav>
+        </div>       
     </header>
         <div class="banner">
             <img src="/assets/img/logo.webp" alt="Sci-Fi Festival" class="banner-image">
         </div>
         <main> 
+        <hr>
         <section class="billetterie">
             <div class="billetterie__container">
                 <div class="billetterie__offer">
@@ -29,7 +46,6 @@
                     <p class="billetterie__offer--description">Une place au prix le plus bas</p>
                     <button class="billetterie__offer--button">Acheter maintenant</button>
                 </div>
-                
                 <div class="billetterie__offer">
                     <h2 class="billetterie__offer--title">2 places</h2>
                     <p class="billetterie__offer--price">16€</p>
@@ -37,7 +53,7 @@
                         2 places aux meilleurs prix<br>
                         Disposez d'une réduction pour les duos
                     </p>
-                    <button class="billetterie__offer-button">Acheter maintenant</button>
+                    <button class="billetterie__offer--button">Acheter maintenant</button>
                 </div>
                 
                 <div class="billetterie__offer">
@@ -78,6 +94,7 @@
                     </div>
                 </div>
         </footer>
+        <script src="src/js/script.js"></script>
     </body>
     </html>
     

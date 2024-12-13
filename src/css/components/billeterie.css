@@ -1,0 +1,68 @@
+.billetterie {
+    background: linear-gradient(to bottom, #1B263B, #0F1A2B); 
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+
+.billetterie__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    align-items: center; 
+}
+
+
+.billetterie__offer {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+}
+
+
+.billetterie__offer--title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px ;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.billetterie__offer--price {
+    font-family: 'orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+.billetterie__offer--description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.6; 
+}
+
+
+.billetterie__offer--button {
+    background-color: #00FFFF; 
+    color: #0F1A2B; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.billetterie__offer--button:hover {
+    background-color: #ffffff;
+    color: #00FFFF;
+}

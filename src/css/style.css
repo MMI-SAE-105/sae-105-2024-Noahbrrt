@@ -34,4 +34,8 @@ Soyez attentifs à l'ordre d'import :
 @import "/src/css/components/partenaires.css";
 @import "/src/css/components/valeurs.css";
 @import "/src/css/components/teamcontainer.css";
-@import "/src/css/components/inscription.css"
+@import "/src/css/components/inscription.css";
+@import "/src/css/components/billeterie.css";
+@import "/src/css/components/contact.css";
+@import "/src/css/components/programmation.css";
+@import "/src/css/components/lightbox.css";

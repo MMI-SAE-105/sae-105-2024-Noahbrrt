@@ -5,46 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sci-Fi Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon.png">
 </head>
 <body>
     <header class="header">
-        <div class="header__close--icon">
+        <div class="header__accueil--icon">
             <img src="/assets/icons/Vector.svg" alt="page accueil" class="accueil-icon">
         </div>
-
         <div class="header__icons">
             <img src="/assets/icons/menu-open.svg" alt="Menu" class="menu-icon">
             <img src="/assets/icons/search.svg" alt="Recherche" class="search-icon">
-        </div>
+            <nav class="menu">
+                <button class="menu-toggle" aria-label="Ouvrir le menu">
+                    <img src="./assets/icons/close.svg" alt="Menu Fermer">
+                </button>
+                <ul class="menu-list">
+                    <li><a href="infos.html">Infos pratiques</a></li>
+                    <li><a href="billeterie.html">Billetterie</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">programmation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+                <button class="search-toggle" aria-label="Rechercher">
+                    <img src="./assets/icons/search.svg" alt="Rechercher">
+                </button>
+            </nav>
+        </div>       
     </header>
         <div class="banner">
             <img src="/assets/img/logo.webp" alt="Sci-Fi Festival" class="banner-image">
         </div>
         <main>
-    <section class="about">
-        <div class="about__container">
-            <hr>
-            <h1 class="about__title">À propos</h1>
-            <p class="about__text">
-                Le festival propose des courts-métrages de passionnés de science-fiction en compétition, avec un prix à gagner. Des films rares et moins connus seront diffusés, certains en présence de leur réalisateur, offrant au public des rencontres exclusives. Pour enrichir l'expérience, un concert de musiques cultes de films de science-fiction est également prévu.
-            </p>
-            <div class="about__carousel">
-                <div class="about__carousel-track">
-                <img src="/assets/img/avatar.webp" alt="Image du film 1" class="about__carousel--image">
-                <img src="/assets/img/retour.webp" alt="Image du film 2" class="about__carousel--image">
-                <img src="/assets/img/interstellar.webp" alt="Image du film 3" class="about__carousel--image">
-              </div>
-              <div class="about__carousel--points">
-                <button class="point active" data-index="0"></button>
-                <button class="point" data-index="1"></button>
-                <button class="point" data-index="2"></button>
-            </div>
-            </div>
-            <p class="about__text">
-                Ce festival de cinéma s'adresse à un public varié, des passionnés aux curieux. Les étudiants y trouvent un espace de divertissement et de partage, mais aussi une opportunité pour les jeunes réalisateurs de se faire connaître. Réalisateurs et amateurs y participent avec passion à travers films et courts-métrages, rendant l'événement accessible à tous, quel que soit leur âge ou leur intérêt.
-            </p>
-        </div>
-    </section>
+        <section class="about">
+            <div class="about__container">
+                 <hr>
+                 <h1 class="about__title">À propos</h1>
+                 <p class="about__text">
+                        Le festival propose des courts-métrages de passionnés de science-fiction en compétition, avec un prix à gagner. Des films rares et moins connus seront diffusés, certains en présence de leur réalisateur, offrant au public des rencontres exclusives. Pour enrichir l'expérience, un concert de musiques cultes de films de science-fiction est également prévu.
+                </p>
+                <div class="about__carousel">
+                        <button class="about__carousel--arrow about__carousel--arrow-left">&#8249;</button>
+                        <div class="about__carousel--track">
+                            <img src="/assets/img/avatar.webp" alt="Image du film 1" class="about__carousel--image">
+                            <img src="/assets/img/retour.webp" alt="Image du film 2" class="about__carousel--image">
+                            <img src="/assets/img/interstellar.webp" alt="Image du film 3" class="about__carousel--image">
+                        </div>
+                        <button class="about__carousel--arrow about__carousel--arrow-right">&#8250;</button>
+                        <div class="about__carousel--points">
+                        <button class="point active" data-index="0"></button>
+                        <button class="point" data-index="1"></button>
+                        <button class="point" data-index="2"></button>
+                     </div>
+                </div>
+                <p class="about__text">
+                     Ce festival de cinéma s'adresse à un public varié, des passionnés aux curieux. Les étudiants y trouvent un espace de divertissement et de partage, mais aussi une opportunité pour les jeunes réalisateurs de se faire connaître. Réalisateurs et amateurs y participent avec passion à travers films et courts-métrages, rendant l'événement accessible à tous, quel que soit leur âge ou leur intérêt.
+                 </p>
+             </div>
+ </section>
 
     <section class="valeurs">
         <div class="valeurs__container">
@@ -55,7 +73,8 @@
                 <p class="valeurs__text">
                     Un des ethos du festival pourrait être l'exploration de l'inconnu ainsi que l'innovation. La science-fiction pousse l'être humain à se réinventer, tout en nous offrant une perspective sur l'avenir. Les courts-métrages proposés par le festival sont également dans cette catégorie d'idées.
                 </p>
-                <img src="/assets/img/matrix.webp" alt="Image du film Matrix" class="valeurs__image">
+                <img src="/assets/img/matrix.webp" alt="Image du film Matrix" class="valeurs__image" data-full-img="/assets/img/matrix.webp">
+                <dialog id="lightbox"><img src="/assets/img/matrix.webp" alt="" /></dialog>
                 <hr>
                 <h2 class="valeurs__subtitle">Création</h2>
             <p class="valeurs__text">
@@ -83,18 +102,18 @@
             <h1 class="team__title">L'équipe</h1>
             <div class="team__member">
                 <img src="/assets/img/perso1.webp" alt="Manolia Kocaoglu" class="team__member--image">
-                <h2 class="team__member-name">Manolia Kocaoglu</h2>
+                <h2 class="team__member--name">Manolia Kocaoglu</h2>
                 <p class="team__member-role">Organisatrice</p>
             </div>
             <div class="team__member">
                 <img src="/assets/img/perso2.webp" alt="Mathis Dubois" class="team__member--image">
-                <h2 class="team__member-name">Mathis Dubois</h2>
-                <p class="team__member-role">Responsable programmation</p>
+                <h2 class="team__member--name">Mathis Dubois</h2>
+                <p class="team__member---role">Responsable programmation</p>
             </div>
             <div class="team__member">
                 <img src="/assets/img/perso3.webp" alt="Henry Leroy" class="team__member--image">
-                <h2 class="team__member-name">Henry Leroy</h2>
-                <p class="team__member-role">Responsable partenariats</p>
+                <h2 class="team__member--name">Henry Leroy</h2>
+                <p class="team__member--role">Responsable partenariats</p>
             </div>
         </div>
     </section>
@@ -126,6 +145,7 @@
                 </div>
             </div>
     </footer>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
 

@@ -5,68 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sci-Fi Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon.png">
 </head>
 <body>
     <header class="header">
         <div class="header__accueil--icon">
             <img src="/assets/icons/Vector.svg" alt="page accueil" class="accueil-icon">
         </div>
-
         <div class="header__icons">
             <img src="/assets/icons/menu-open.svg" alt="Menu" class="menu-icon">
             <img src="/assets/icons/search.svg" alt="Recherche" class="search-icon">
-        </div>
+            <nav class="menu">
+                <button class="menu-toggle" aria-label="Ouvrir le menu">
+                    <img src="./assets/icons/close.svg" alt="Menu Fermer">
+                </button>
+                <ul class="menu-list">
+                    <li><a href="infos.html">Infos pratiques</a></li>
+                    <li><a href="billeterie.html">Billetterie</a></li>
+                    <li><a href="festival.html">Le festival</a></li>
+                    <li><a href="programme.html">programmation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+                <button class="search-toggle" aria-label="Rechercher">
+                    <img src="./assets/icons/search.svg" alt="Rechercher">
+                </button>
+            </nav>
+        </div>       
     </header>
         <div class="banner">
             <img src="/assets/img/logo.webp" alt="Sci-Fi Festival" class="banner-image">
         </div>
-    </main>
-        <section class="programmation">
-            <div class="programmation__container">
+        <main>
+            <section class="schedule">
                 <hr>
-                <h1 class="programmation__title">Programmation</h1>
-                <p>Vous trouverez ci-dessous une liste non exhaustive des films par jour:</p>
-    
-               
-                <div class="programmation__day">
-                    <h2 class="programmation__day-title">Vendredi 14 Mars</h2>
-                    <ul class="programmation__events">
-                        <li class="programmation__event">
-                            <span class="programmation__time">18h00 :</span>
-                            <span class="programmation__description">Ouverture officielle du festival</span>
-                        </li>
-                        <li class="programmation__event">
-                            <span class="programmation__time">19h00 :</span>
-                            <span class="programmation__description">Projection de courts-métrages en compétition</span>
-                        </li>
-                        <li class="programmation__event">
-                            <span class="programmation__time">21h30 :</span>
-                            <span class="programmation__description">Concert de musiques cultes de films de science-fiction</span>
-                        </li>
-                    </ul>
+                <h1 class="schedule__title">Programmation</h1>
+                <p class="schedule__subtitle">Vous trouverez ci-dessous une liste non exhaustive des films par jour :</p>
+        
+                <div class="schedule__day">
+                    <h2 class="schedule__day--title">Vendredi 14 Mars :</h2>
+                    <div class="schedule__carousel">
+                        <button class="carousel__arrow carousel__arrow--left">&#8249;</button>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/singe.webp" alt="La Planète des Singes" class="schedule__card--image">
+                            <h3 class="schedule__card--title">La Planète Des Singes</h3>
+                            <p class="schedule__card--genre">Science-fiction</p>
+                            <p class="schedule__card--details">
+                                Réalisateur : Franklin J. Schaffner<br>
+                                Date de sortie : 2011
+                            </p>
+                            <div class="schedule__card--time">18H</div>
+                        </div>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/enter.webp" alt="Into the Void" class="schedule__card--image">
+                            <h3 class="schedule__card--title">Into the Void</h3>
+                            <p class="schedule__card--genre">Science-fiction</p>
+                            <p class="schedule__card--details">
+                                Réalisateur : Wayne Harry Johnson Jr.<br>
+                                Date de sortie : 2019
+                            </p>
+                            <div class="schedule__card--time">16H</div>
+                        </div>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/avat.webp" alt="Avatar" class="schedule__card--image">
+                            <h3 class="schedule__card--title">Avatar</h3>
+                            <p class="schedule__card--genre">Aventure</p>
+                            <p class="schedule__card--details">
+                                Réalisateur : James Cameron<br>
+                                Date de sortie : 2009
+                            </p>
+                            <div class="schedule__card--time">21H</div>
+                        </div>
+                        <button class="carousel__arrow carousel__arrow--right">&#8250;</button>
+                    </div>
+                    
+        
+                <div class="schedule__day">
+                    <hr>
+                    <h2 class="schedule__day--title">Samedi 15 Mars :</h2>
+                    <div class="schedule__carousel">
+                        <button class="carousel__arrow carousel__arrow--left">&#8249;</button>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/blad.webp" alt="Blade Runner" class="schedule__card--image">
+                            <h3 class="schedule__card--title">Blade Runner</h3>
+                            <p class="schedule__card--genre">Science-fiction</p>
+                            <p class="schedule__card--details">
+                                Réalisateur : Denis Villeneuve<br>
+                                Date de sortie : 2017
+                            </p>
+                            <div class="schedule__card-time">18H</div>
+                        </div>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/matrix.webp" alt="Matrix" class="schedule__card--image">
+                            <h3 class="schedule__card--title">Matrix</h3>
+                            <p class="schedule__card--genre">Cyberpunk</p>
+                            <p class="schedule__card--details">
+                                Réalisateurs : Lana et Lilly Wachowski<br>
+                                Date de sortie : 1999
+                            </p>
+                            <div class="schedule__card--time">21H</div>
+                        </div>
+                        <div class="schedule__card">
+                            <img src="/assets/image programmation/inte.webp" alt="Interstellar" class="schedule__card--image">
+                            <h3 class="schedule__card--title">Interstellar</h3>
+                            <p class="schedule__card--genre">Science-fiction / Aventure</p>
+                            <p class="schedule__card--details">
+                                Réalisateur : Christopher Nolan<br>
+                                Date de sortie : 2014
+                            </p>
+                            <div class="schedule__card--time">16H</div>
+                    </div>
+                    <button class="carousel__arrow carousel__arrow--right">&#8250;</button>
                 </div>
+            </section>
+        </main>
     
-                
-                <div class="programmation__day">
-                    <h2 class="programmation__day-title">Samedi 15 Mars</h2>
-                    <ul class="programmation__events">
-                        <li class="programmation__event">
-                            <span class="programmation__time">10h00 :</span>
-                            <span class="programmation__description">Ateliers de réalisation de courts-métrages pour amateurs</span>
-                        </li>
-                        <li class="programmation__event">
-                            <span class="programmation__time">14h00 :</span>
-                            <span class="programmation__description">Rencontre avec des réalisateurs de films de science-fiction</span>
-                        </li>
-                        <li class="programmation__event">
-                            <span class="programmation__time">17h00 :</span>
-                            <span class="programmation__description">Projection de films cultes du genre avec débat</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
     <footer>
              <div class="footer">
                     <div class="footer__section">
@@ -94,6 +147,7 @@
                     </div>
                 </div>
         </footer>
+        <script src="src/js/script.js"></script>
     </body>
     </html>
     
