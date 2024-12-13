@@ -1,0 +1,83 @@
+/* Section principale */
+.contact {
+    padding: 20px;
+    background: linear-gradient(to bottom, #1B263B, #0F1A2B); 
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact__container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.contact__form {
+    margin-bottom: 30px;
+}
+
+.contact__form--group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact__label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.contact__input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact__input::placeholder {
+    color: #d1d1d1;
+}
+
+.contact__input:focus {
+    border-color: #00FFFF; 
+}
+
+
+.contact__button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #0F1A2B;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact__button:hover {
+    background-color: #ffffff;
+    color: #0F1A2B;
+}

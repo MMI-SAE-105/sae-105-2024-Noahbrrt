@@ -5,34 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sci-Fi Festival</title>
     <link rel="stylesheet" href="src/css/style.css">
+    
 </head>
 <body>
-    <header class="header">
-        <div class="header__accueil--icon">
-            <img src="/assets/icons/Vector.svg" alt="page accueil" class="accueil-icon">
-        </div>
-        <div class="header__icons">
-            <img src="/assets/icons/menu-open.svg" alt="Menu" class="menu-icon">
-            <img src="/assets/icons/search.svg" alt="Recherche" class="search-icon">
-        </div>
-    </header>
-
-    <div class="banner">
-        <img src="/assets/img/logo.webp" alt="Sci-Fi Festival" class="banner-image">
+<header class="header">
+    <div class="header__accueil--icon">
+        <img src="/assets/icons/Vector.svg" alt="page accueil" class="accueil-icon">
     </div>
-
-    <section class="presentation">
-        <div class="presentation__title">
-            <hr>
-            <h1>Présentation</h1>
-            <p>
-                Sci-Fi Festival est un festival audiovisuel dédié aux films de science-fiction, qui se tiendra le week-end du 14 mars. Ouvert à tous les âges et à tous les horizons, l'événement propose des courts-métrages en compétition réalisés par des passionnés, des projections de films cultes, des concerts, ainsi qu'une rencontre avec des réalisateurs.
-            </p>
-            <a href="festival.html" class="btn">Plus d'info</a>
-        </div>
+    <div class="header__icons">
+        <img src="/assets/icons/menu-open.svg" alt="Menu" class="menu-icon">
+        <img src="/assets/icons/search.svg" alt="Recherche" class="search-icon">
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <img src="./assets/icons/close.svg" alt="Menu Fermer">
+            </button>
+            <ul class="menu-list">
+                <li><a href="#infos-pratique">Infos pratique</a></li>
+                <li><a href="#billetterie">Billetterie</a></li>
+                <li><a href="#festival">Le festival</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+            </ul>
+            <button class="search-toggle" aria-label="Rechercher">
+                <img src="./assets/icons/search.svg" alt="Rechercher">
+            </button>
+        </nav>
+    </div>
+        
+</header>
+    
+<div class="banner">
+ <img src="/assets/img/logo.webp" alt="Sci-Fi Festival" class="banner-image">
+ </div>
+<main>
+ <section class="presentation">
+    <div class="presentation__title">
+         <hr>
+         <h1>Présentation</h1>
+         <p>
+         Sci-Fi Festival est un festival audiovisuel dédié aux films de science-fiction, qui se tiendra le week-end du 14 mars. Ouvert à tous les âges et à tous les horizons, l'événement propose des courts-métrages en compétition réalisés par des passionnés, des projections de films cultes, des concerts, ainsi qu'une rencontre avec des réalisateurs.
+        </p>
+         <a href="festival.html" class="btn">Plus d'info</a>
+    </div>
     </section>
 
-    <!-- Section Programme -->
     <section class="programme">
         <div class="programme__title">
             <hr>
@@ -77,7 +93,7 @@
             <h1>Lieu</h1>
             <p>22 Av. Gast de la Laurencie, 90000 Belfort</p>
             <img src="/assets/img/carte.webp" alt="Carte du lieu">
-            <a href="lieu.html" class="btn">Plus d'info</a>
+            <a href="infos.html" class="btn">Plus d'info</a>
         </div>
     </section>
 
@@ -103,33 +119,34 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="footer">
-            <div class="footer__section">
-                <h1>Pages du site</h1>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="infos.html">Infos pratiques</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+</main>
+<footer>
+         <div class="footer">
+                <div class="footer__section">
+                    <h1 class="footer__section--title">Pages du site</h1>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="infos.html">Infos pratiques</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h1 class="footer__section--title">Informations</h1>
+                    <p>22 Av. Gast de la Laurencie, 90000 Belfort</p>
+                    <p>14 mars 2024</p>
+                    <p>Tel: 03 84 82 12 17</p>
+                </div>
+                <div class="footer__section">
+                    <h1 class="footer__section--title">Réseaux sociaux</h1>
+                    <ul class="socials">
+                        <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="assets/icons/ibstagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="assets/icons/youtube.svg" alt="youtube"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__section">
-                <h1>Informations</h1>
-                <p>22 Av. Gast de la Laurencie, 90000 Belfort</p>
-                <p>14 mars 2024</p>
-                <p>Tel: 03 84 82 12 17</p>
-            </div>
-            <div class="footer__section">
-                <h1>Réseaux sociaux</h1>
-                <ul class="socials">
-                    <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="assets/icons/ibstagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="assets/icons/youtube.svg" alt="youtube"></a></li>
-                </ul>
-            </div>
-        </div>
     </footer>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

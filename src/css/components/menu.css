@@ -1,0 +1,54 @@
+/* Le menu est caché par défaut */
+.menu {
+    display: none; /* Masquer le menu par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond sombre */
+    z-index: 9999; /* S'assurer que le menu reste au-dessus */
+    padding-top: 80px; /* Décalage vers le bas pour les éléments du menu */
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Effet de transition pour l'ouverture */
+}
+
+/* Lorsque la classe 'menu--open' est ajoutée, afficher le menu */
+.menu--open {
+    display: block; /* Rendre le menu visible */
+}
+
+/* Style pour les liens du menu */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 20px 0;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+.menu-list li a:hover {
+    background-color: #444;
+}
+
+/* Style pour l'icône de fermeture */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}

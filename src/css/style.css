@@ -29,4 +29,9 @@ Soyez attentifs à l'ordre d'import :
 @import "layout/footer.css";
 
 /* Components */
-@import "components/";
+@import "/src/css/components/carrouselpropos.css";
+@import "/src/css/components/menu.css";
+@import "/src/css/components/partenaires.css";
+@import "/src/css/components/valeurs.css";
+@import "/src/css/components/teamcontainer.css";
+@import "/src/css/components/inscription.css"
