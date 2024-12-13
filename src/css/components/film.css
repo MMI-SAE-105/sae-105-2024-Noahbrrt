@@ -1,0 +1,49 @@
+.film {
+    padding: 20px;
+}
+
+.film__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.film__poster {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.film__title {
+    font-size: 36px;
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.film__subtitle {
+    font-size: 36px;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.film__text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.film__video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.film__info--list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.film__info--list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}

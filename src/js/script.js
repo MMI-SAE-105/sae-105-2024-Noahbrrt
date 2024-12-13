@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
 const lightBox = document.querySelector("#lightbox");
 const lightBoxImg = lightBox.querySelector("img");
 
@@ -74,8 +76,10 @@ document.body.addEventListener("click", (evt)=> {
     }, {once: true});
 });
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.about__carousel--track');
+    const track = document.querySelector('.about__carousel--prev');
     const images = document.querySelectorAll('.about__carousel--image');
     const prevButton = document.querySelector('.about__carousel--arrow-left');
     const nextButton = document.querySelector('.about__carousel--arrow-right');

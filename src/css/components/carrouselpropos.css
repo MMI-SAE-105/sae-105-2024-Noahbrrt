@@ -7,21 +7,22 @@
     position: relative;
 }
 
-/* Track contenant les images */
-.about__carousel--track {
+.about__carousel--prev {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 20px; /* Espacement entre les images */
+    gap: 20px; 
+    scroll-snap-align: center;
 }
 
-/* Images */
+
 .about__carousel--image {
     width: 100%;
-    object-fit: cover; /* Ajuste l'image pour qu'elle ne soit pas déformée */
+    object-fit: cover; 
     border-radius: 10px;
+    margin-left: 23px;
 }
 
-/* Points de navigation */
+
 .about__carousel--points {
     display: flex;
     justify-content: center;
@@ -44,7 +45,7 @@
     background-color: #00dffc;
 }
 
-/* Flèches */
+
 .about__carousel--arrow {
     position: absolute;
     top: 50%;
@@ -68,12 +69,12 @@
     background-color: #00dffc;
 }
 
-/* Flèche gauche */
+
 .about__carousel--arrow-left {
-    left: 10px; /* Position à gauche */
+    left: 10px; 
 }
 
-/* Flèche droite */
+
 .about__carousel--arrow-right {
-    right: 10px; /* Position à droite */
+    right: 10px; 
 }
